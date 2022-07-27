@@ -25,7 +25,7 @@ return [
     | services the application utilizes. Set this in your ".env" file.
     |
     */
-
+   
     'env' => env('APP_ENV', 'production'),
 
     /*
@@ -164,7 +164,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Benwilkins\Analyst\AnalystServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -219,6 +219,7 @@ return [
         // 'Redis' => Illuminate\Support\Facades\Redis::class,
         'Request' => Illuminate\Support\Facades\Request::class,
         'Response' => Illuminate\Support\Facades\Response::class,
+    
         'Route' => Illuminate\Support\Facades\Route::class,
         'Schema' => Illuminate\Support\Facades\Schema::class,
         'Session' => Illuminate\Support\Facades\Session::class,
@@ -228,6 +229,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'PDF' => \Barryvdh\DomPDF\Facade::class,
+        'Analyst' => Benwilkins\Analyst\AnalystFacade::class,
     ],
 
 ];

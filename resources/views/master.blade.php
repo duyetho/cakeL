@@ -37,6 +37,16 @@
     </script>
     <script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SKCWYB6ZTJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SKCWYB6ZTJ');
+    </script>
+    
   </head>
 
   <body>
@@ -46,6 +56,7 @@
     @yield('content')
     @include('footer')
     @include('script')
+    
   </body>
 
 </html>
